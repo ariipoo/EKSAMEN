@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="ikoner/css/solid.css">
     <link rel="stylesheet" href="ikoner/css/regular.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Eksamen | Product</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="global-nav">
             <form>
                 <label>
-                    <input type="search" placeholder="Søk her">
+                    <input type="search" placeholder="Søk her" title="Search">
                 </label>
             </form>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="product.html">Produkter</a></li>
+                <li><a href="#popular-products">Produkter</a></li>
                 <li><a href="index.html">Logo</a></li>
                 <li><a href="#popular-categories">Kategorier</a></li>
                 <li><a href="#global-footer">Kontakt Oss</a></li>
@@ -32,6 +32,72 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <nav id="breadcrumbs">
+            <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="index.html">
+                  <span itemprop="name">Home</span></a>
+                  <meta itemprop="position" content="1" />
+                </li>
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="index.html#popular-categories">
+                  <span itemprop="name">Category</span></a>
+                  <meta itemprop="position" content="2" />
+                </li>
+                <li itemprop="itemListElement" itemscope
+                    itemtype="https://schema.org/ListItem">
+                  <a itemprop="item" href="product.html">
+                  <span itemprop="name">Product name</span></a>
+                  <meta itemprop="position" content="3" />
+                </li>
+              </ol>
+        </nav>
+        <section>
+                <img src="https://picsum.photos/500" alt="product 1">
+                <img src="https://picsum.photos/250" alt="product 2">
+                <img src="https://picsum.photos/250" alt="product 3">
+                <img src="https://picsum.photos/250" alt="product 4">
+        </section>
+        <section>
+            <h3>Product name</h3>
+            <a href="#">Product brand</a>
+            <p>Kr 1999 incl. VAT.</p>
+            <p>Color: brown</p>
+        </section>
+        <aside>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 1">
+                </picture>
+                <a href="product.html"><h3>Product name</h3></a>
+                <p>Kr 1999</p>
+            </article>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 2">
+                </picture>
+                <a href="product.html"><h3>Product name</h3></a>
+                <p>Kr 1999</p>
+            </article>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 3">
+                </picture>
+                <a href="product.html"><h3>Product name</h3></a>
+                <p>Kr 1999</p>
+            </article>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 4">
+                </picture>
+                <a href="product.html"><h3>Product name</h3></a>
+                <p>Kr 1999</p>
+            </article>
+        </aside>
+    </main>
     <footer id="global-footer">
         <section>
             <h3>Logo</h3>
@@ -48,9 +114,13 @@
         </section>
         <section>
             <h3>Snarvei</h3>
-            <p>Produkter</p>
-            <p>Kategorier</p>
-            <p>Kontakt Oss</p>
+            <nav>
+                <ul>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li><a href="#popular-categories">Kategorier</a></li>
+                    <li><a href="#global-footer">Kontakt Oss</a></li>
+                </ul>
+            </nav>
         </section>
         <section>
             <h3>Sosiale medier</h3>

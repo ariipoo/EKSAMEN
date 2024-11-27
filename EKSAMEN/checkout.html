@@ -8,19 +8,19 @@
     <link rel="stylesheet" href="ikoner/css/solid.css">
     <link rel="stylesheet" href="ikoner/css/regular.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Eksamen | Checkout</title>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="global-nav">
             <form>
                 <label>
-                    <input type="search" placeholder="Søk her">
+                    <input type="search" placeholder="Søk her" title="Search">
                 </label>
             </form>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="product.html">Produkter</a></li>
+                <li><a href="#popular-products">Produkter</a></li>
                 <li><a href="index.html">Logo</a></li>
                 <li><a href="#popular-categories">Kategorier</a></li>
                 <li><a href="#global-footer">Kontakt Oss</a></li>
@@ -32,6 +32,113 @@
             </ul>
         </nav>
     </header>
+    <main>
+        <h2>Checkout</h2>
+        <section>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/200" alt="article 1">
+                </picture>
+                <a href="product.html"><h3>Product name</h3></a>
+                <p>Kr 1999</p>
+                <p>Color: brown</p>
+            </article>
+            <article>
+                <picture>
+                    <img src="https://picsum.photos/200" alt="article 2">
+                </picture>
+                <a href="product.html"><h3>Product name</h3></a>
+                <p>Kr 1999</p>
+                <p>Color: brown</p>
+            </article>
+        </section>
+        <section>
+            <h2>Your information</h2>
+            <form>
+                <h3>Delivery address</h3>
+                <label>
+                    Name
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" placeholder="Name" required>
+                </label>
+                <label>
+                    Surname
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" placeholder="Surname" required>
+                </label>
+                <label>
+                    Street address
+                    <input type="text" placeholder="Street address" required>
+                </label>
+                <label>
+                    Zip code
+                    <input type="number" placeholder="Zip code" min="1000" max="9999" required>
+                </label>
+                <label>
+                    City
+                    <input type="text" pattern="[A-Za-zæøåÆØÅ]{1,32}" placeholder="City" required>
+                </label>
+                
+                <h3>Contact information</h3>
+                <label>
+                    E-mail
+                    <input type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="E-mail" required>
+                </label>
+                <label>
+                    Phone number
+                    <input type="tel" placeholder="Phone number" pattern="[0-9]{8,12}" required>
+                </label>
+                <input type="submit" value="Save">
+                <input type="reset" value="Cancel">
+            </form>
+        </section>
+        <section>
+            <h2>Delivery</h2>
+            <form>
+                <fieldset>
+                    <legend>Delivery method</legend>
+                    <label>
+                        <input type="radio" name="delivery" value="ExpressHome" required>
+                        Express home delivery
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="ExpressPickup" required>
+                        Express pickup place
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery" value="StandardHome" required>
+                        Standard home delivery
+                    </label>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>Payment</h2>
+            <form>
+                <label>
+                    <input type="tel" pattern="[0-9\s]{13,19}" placeholder="Card number" required>
+                </label>
+                <label>
+                    <input type="date" min="2024-12-01" max="2028-12-01" required>
+                </label>
+                <label>
+                    <input type="number" min="100" max="999" placeholder="CVC" required>
+                </label>
+                <p>Cost including VAT</p>
+                <p>1999 Kr</p>
+                <button type="button">Save</button>
+                <p>You accept the terms of lorem ipsum</p>
+                <p>lorem ipsum lorem ipsum lorem</p>
+                <p>ipsum lorem ipsum lorem ipsum</p>
+                <label>
+                    <input type="radio" name="news" value="News">
+                    Send me news
+                </label>
+                <label>
+                    <input type="radio" name="offers" value="Offers">
+                    Send me offers
+                </label>
+            </form>
+        </section>
+    </main>
     <footer id="global-footer">
         <section>
             <h3>Logo</h3>
@@ -48,9 +155,13 @@
         </section>
         <section>
             <h3>Snarvei</h3>
-            <p>Produkter</p>
-            <p>Kategorier</p>
-            <p>Kontakt Oss</p>
+            <nav>
+                <ul>
+                    <li><a href="#popular-products">Produkter</a></li>
+                    <li><a href="#popular-categories">Kategorier</a></li>
+                    <li><a href="#global-footer">Kontakt Oss</a></li>
+                </ul>
+            </nav>
         </section>
         <section>
             <h3>Sosiale medier</h3>
