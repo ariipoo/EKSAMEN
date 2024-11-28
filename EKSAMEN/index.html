@@ -11,21 +11,22 @@
     <title>Eksamen | Forside</title>
 </head>
 <body>
-    <header>
-        <nav class="global-nav">
+    <header id="global-header">
+        <nav>
             <form>
                 <label>
-                    <input type="search" placeholder="Søk her" title="Search">
+                    <input type="search" placeholder="Search here" title="Search">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </label>
             </form>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#popular-products">Produkter</a></li>
-                <li><a href="index.html">Logo</a></li>
+                <li><a href="index.html"><span id="logo">Logo</span></a></li>
                 <li><a href="#popular-categories">Kategorier</a></li>
                 <li><a href="#global-footer">Kontakt Oss</a></li>
             </ul>
-            <ul>
+            <ul class="icon-list">
                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
                 <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
@@ -35,51 +36,53 @@
     <main>
         <section id="banner">
             <h1>Banner</h1>
-            <p>This is a banner</p>
-            <a href="#">link</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#">Read more</a>
         </section>
         <section id="popular-products">
             <h2>Our most popular products</h2>
             <p>Discover the best of the best</p>
-            <button type="button">New Product</button>
-            <button type="button">Special Price</button>
-            <button type="button">Best Sellers</button>
-            <article>
+            <ul id="buttons">
+                <li><button type="button">New Product</button></li>
+                <li><button type="button">Special Price</button></li>
+                <li><button type="button">Best Sellers</button></li>
+            </ul>
+            <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/350" alt="article 1">
                 </picture>
                 <a href="product.html"><h3>Product name</h3></a>
                 <p>Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/350" alt="article 2">
                 </picture>
                 <a href="product.html"><h3>Product name</h3></a>
                 <p>Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/350" alt="article 3">
                 </picture>
                 <a href="product.html"><h3>Product name</h3></a>
                 <p>Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/350" alt="article 4">
                 </picture>
                 <a href="product.html"><h3>Product name</h3></a>
                 <p>Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/350" alt="article 5">
                 </picture>
                 <a href="product.html"><h3>Product name</h3></a>
                 <p>Kr 1999</p>
             </article>
-            <article>
+            <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/350" alt="article 6">
                 </picture>
@@ -92,33 +95,18 @@
             <p>Discover the best of the best</p>
             <article>
                 <a href="#"><h3>Category 1</h3></a>
-                <picture>
-                    <img src="https://picsum.photos/350" alt="article 1">
-                </picture>
             </article>
             <article>
                 <a href="#"><h3>Category 2</h3></a>
-                <picture>
-                    <img src="https://picsum.photos/350" alt="article 2">
-                </picture>
             </article>
             <article>
                 <a href="#"><h3>Category 3</h3></a>
-                <picture>
-                    <img src="https://picsum.photos/350" alt="article 3">
-                </picture>
             </article>
             <article>
                 <a href="#"><h3>Category 4</h3></a>
-                <picture>
-                    <img src="https://picsum.photos/350" alt="article 4">
-                </picture>
             </article>
             <article>
                 <a href="#"><h3>Category 5</h3></a>
-                <picture>
-                    <img src="https://picsum.photos/350" alt="article 5">
-                </picture>
             </article>
         </section>
         <section id="review">
@@ -128,58 +116,58 @@
                     <img src="https://picsum.photos/350" alt="person 1">
                 </picture>
                 <h3>Isak isakson</h3>
-                <p>This product sucks!!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </article>
             <article>
                 <picture>
                     <img src="https://picsum.photos/350" alt="person 1">
                 </picture>
                 <h3>Isak isakson</h3>
-                <p>This product sucks!!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </article>
             <article>
                 <picture>
                     <img src="https://picsum.photos/350" alt="person 1">
                 </picture>
                 <h3>Isak isakson</h3>
-                <p>This product sucks!!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </article>
             <article>
                 <picture>
                     <img src="https://picsum.photos/350" alt="person 1">
                 </picture>
                 <h3>Isak isakson</h3>
-                <p>This product sucks!!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </article>
         </section>
     </main>
     <footer id="global-footer">
-        <section>
+        <section id="footer-logo">
             <h3>Logo</h3>
             <p>Lorem ipsum lorem ipsum lorem ipsum</p>
         </section>
-        <section>
-            <h3>Kontakt</h3>
+        <section id="contact">
+            <h3>Contact</h3>
             <ul>
                 <li><i class="fa-solid fa-location-dot"></i> B R A Veien 4, 1757 Halden</li>
                 <li><i class="fa-solid fa-phone"></i> 69 60 80 00</li>
                 <li><i class="fa-solid fa-envelope"></i> halden@hiof.no</li>
-                <li><i class="fa-solid fa-clock"></i> Stenger 15:00</li>
+                <li><i class="fa-solid fa-clock"></i> closing hours: 15:00</li>
             </ul>
         </section>
-        <section>
-            <h3>Snarvei</h3>
+        <section id="shortcut">
+            <h3>Shortcut</h3>
             <nav>
                 <ul>
-                    <li><a href="#popular-products">Produkter</a></li>
-                    <li><a href="#popular-categories">Kategorier</a></li>
-                    <li><a href="#global-footer">Kontakt Oss</a></li>
+                    <li><a href="#popular-products">Products</a></li>
+                    <li><a href="#popular-categories">Categories</a></li>
+                    <li><a href="#global-footer">Contact us</a></li>
                 </ul>
             </nav>
         </section>
-        <section>
-            <h3>Sosiale medier</h3>
-            <ul>
+        <section id="social-media">
+            <h3>Social media</h3>
+            <ul class="icon-list">
                 <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>

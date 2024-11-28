@@ -11,31 +11,32 @@
     <title>Eksamen | Checkout</title>
 </head>
 <body>
-    <header>
-        <nav class="global-nav">
+    <header id="global-header">
+        <nav>
             <form>
                 <label>
-                    <input type="search" placeholder="Søk her" title="Search">
+                    <input type="search" placeholder="Search here" title="Search">
+                    <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </label>
             </form>
             <ul>
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="#popular-products">Produkter</a></li>
-                <li><a href="index.html">Logo</a></li>
+                <li><a href="index.html"><span id="logo">Logo</span></a></li>
                 <li><a href="#popular-categories">Kategorier</a></li>
                 <li><a href="#global-footer">Kontakt Oss</a></li>
             </ul>
-            <ul>
+            <ul class="icon-list">
                 <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
                 <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <h2>Checkout</h2>
-        <section>
-            <article>
+    <main id="checkout-page">
+        <section id="cart">
+            <h2>Your cart</h2>
+            <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/200" alt="article 1">
                 </picture>
@@ -43,7 +44,7 @@
                 <p>Kr 1999</p>
                 <p>Color: brown</p>
             </article>
-            <article>
+            <article class="product-card">
                 <picture>
                     <img src="https://picsum.photos/200" alt="article 2">
                 </picture>
@@ -52,7 +53,7 @@
                 <p>Color: brown</p>
             </article>
         </section>
-        <section>
+        <section id="user-info">
             <h2>Your information</h2>
             <form>
                 <h3>Delivery address</h3>
@@ -86,86 +87,95 @@
                     Phone number
                     <input type="tel" placeholder="Phone number" pattern="[0-9]{8,12}" required>
                 </label>
-                <input type="submit" value="Save">
-                <input type="reset" value="Cancel">
+                <button type="button">Save</button>
+                <a href="#">Cancel</a>
             </form>
         </section>
         <section>
             <h2>Delivery</h2>
             <form>
-                <fieldset>
-                    <legend>Delivery method</legend>
-                    <label>
-                        <input type="radio" name="delivery" value="ExpressHome" required>
-                        Express home delivery
-                    </label>
-                    <label>
-                        <input type="radio" name="delivery" value="ExpressPickup" required>
-                        Express pickup place
-                    </label>
-                    <label>
-                        <input type="radio" name="delivery" value="StandardHome" required>
-                        Standard home delivery
-                    </label>
-                </fieldset>
+                <h3>Delivery method</h3>
+                <ul class="radio-form">
+                    <li>
+                        <input type="radio" name="delivery" id="ExpressHome" required>
+                        <label for="ExpressHome">Express home delivery</label>
+                        <span>3-4 days</span>
+                        <span>59 kr</span>
+                    </li>
+                    <li>
+                        <input type="radio" name="delivery" id="ExpressPickup" required>
+                        <label for="ExpressPickup">Express pickup place</label>
+                        <span>1-3 days</span>
+                        <span>59 kr</span>
+                    </li>
+                    <li>
+                        <input type="radio" name="delivery" id="StandardHome" required>
+                        <label for="StandardHome">Standard home delivery</label>
+                        <span>5-8 days</span>
+                        <span>free</span>
+                    </li>
+                </ul>
             </form>
         </section>
         <section>
-            <h2>Payment</h2>
-            <form>
+            <h2>Pay with card</h2>
+            <form id="pay-form">
                 <label>
+                    <span>Card number</span>
                     <input type="tel" pattern="[0-9\s]{13,19}" placeholder="Card number" required>
                 </label>
                 <label>
+                    <span>Date</span>
                     <input type="date" min="2024-12-01" max="2028-12-01" required>
                 </label>
                 <label>
+                    <span>CVC/CVV</span>
                     <input type="number" min="100" max="999" placeholder="CVC" required>
                 </label>
                 <p>Cost including VAT</p>
-                <p>1999 Kr</p>
+                <p id="cost">1999 Kr</p>
                 <button type="button">Save</button>
-                <p>You accept the terms of lorem ipsum</p>
-                <p>lorem ipsum lorem ipsum lorem</p>
-                <p>ipsum lorem ipsum lorem ipsum</p>
-                <label>
-                    <input type="radio" name="news" value="News">
-                    Send me news
-                </label>
-                <label>
-                    <input type="radio" name="offers" value="Offers">
-                    Send me offers
-                </label>
+                <p>By accessing, viewing, or using the content, material, products, or services available on or through the Site, you certify that you have read, understand, and agree to be legally bound by these Terms, as well as our Privacy Policy, each of which is incorporated by reference as if fully set forth herein. You further certify that you are 13 years of age or older and that you have all the necessary rights, power and authority to enter into this Agreement and perform the obligations set forth under this Agreement.</p>
+                <ul class="radio-form">
+                    <li>
+                        <input type="radio" name="news" id="News">
+                        <label for="News">Yes, send me newsletters.</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="offers" id="Offers">
+                        <label for="Offers">Yes, I want to be notified during sales.</label>
+                    </li>
+                </ul>
             </form>
         </section>
     </main>
     <footer id="global-footer">
-        <section>
+        <section id="footer-logo">
             <h3>Logo</h3>
             <p>Lorem ipsum lorem ipsum lorem ipsum</p>
         </section>
-        <section>
-            <h3>Kontakt</h3>
+        <section id="contact">
+            <h3>Contact</h3>
             <ul>
                 <li><i class="fa-solid fa-location-dot"></i> B R A Veien 4, 1757 Halden</li>
                 <li><i class="fa-solid fa-phone"></i> 69 60 80 00</li>
                 <li><i class="fa-solid fa-envelope"></i> halden@hiof.no</li>
-                <li><i class="fa-solid fa-clock"></i> Stenger 15:00</li>
+                <li><i class="fa-solid fa-clock"></i> closing hours: 15:00</li>
             </ul>
         </section>
-        <section>
-            <h3>Snarvei</h3>
+        <section id="shortcut">
+            <h3>Shortcut</h3>
             <nav>
                 <ul>
-                    <li><a href="#popular-products">Produkter</a></li>
-                    <li><a href="#popular-categories">Kategorier</a></li>
-                    <li><a href="#global-footer">Kontakt Oss</a></li>
+                    <li><a href="#popular-products">Products</a></li>
+                    <li><a href="#popular-categories">Categories</a></li>
+                    <li><a href="#global-footer">Contact us</a></li>
                 </ul>
             </nav>
         </section>
-        <section>
-            <h3>Sosiale medier</h3>
-            <ul>
+        <section id="social-media">
+            <h3>Social media</h3>
+            <ul class="icon-list">
                 <li><a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
