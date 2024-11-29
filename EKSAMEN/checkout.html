@@ -40,6 +40,8 @@
                 <picture>
                     <img src="https://picsum.photos/200" alt="article 1">
                 </picture>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-trash"></i>
                 <a href="product.html"><h3>Product name</h3></a>
                 <p>Kr 1999</p>
                 <p>Color: brown</p>
@@ -59,6 +61,8 @@
                 <picture>
                     <img src="https://picsum.photos/200" alt="article 2">
                 </picture>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-trash"></i>
                 <a href="product.html"><h3>Product name</h3></a>
                 <p>Kr 1999</p>
                 <p>Color: brown</p>
@@ -113,34 +117,34 @@
                 <a href="#">Cancel</a>
             </form>
         </section>
-        <section>
+        <section id="delivery-info">
             <h2>Delivery</h2>
             <form>
                 <h3>Delivery method</h3>
                 <ul class="radio-form">
                     <li>
                         <input type="radio" name="delivery" id="ExpressHome" required>
-                        <label for="ExpressHome">Express home delivery</label>
+                        <label for="ExpressHome">Express home delivery <i class="fa-solid fa-truck"></i></label>
                         <span>3-4 days</span>
                         <span>59 kr</span>
                     </li>
                     <li>
                         <input type="radio" name="delivery" id="ExpressPickup" required>
-                        <label for="ExpressPickup">Express pickup place</label>
+                        <label for="ExpressPickup">Express pickup place <i class="fa-solid fa-truck"></i></label>
                         <span>1-3 days</span>
                         <span>59 kr</span>
                     </li>
                     <li>
                         <input type="radio" name="delivery" id="StandardHome" required>
-                        <label for="StandardHome">Standard home delivery</label>
+                        <label for="StandardHome">Standard home delivery <i class="fa-solid fa-truck"></i></label>
                         <span>5-8 days</span>
                         <span>free</span>
                     </li>
                 </ul>
             </form>
         </section>
-        <section>
-            <h2>Pay with card</h2>
+        <section id="card-info">
+            <h2>Pay with card <i class="fa-regular fa-credit-card"></i></h2>
             <form id="pay-form">
                 <label>
                     <span>Card number</span>

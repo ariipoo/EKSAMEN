@@ -33,7 +33,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main id="product-page">
         <nav id="breadcrumbs">
             <ol itemscope itemtype="https://schema.org/BreadcrumbList">
                 <li itemprop="itemListElement" itemscope
@@ -57,10 +57,12 @@
               </ol>
         </nav>
         <section id="products">
-                <img src="https://picsum.photos/500" alt="product 1">
+            <img src="https://picsum.photos/500" alt="product 1" id="big-img">
+            <section id="smaller-img">
                 <img src="https://picsum.photos/250" alt="product 2">
                 <img src="https://picsum.photos/250" alt="product 3">
                 <img src="https://picsum.photos/250" alt="product 4">
+            </section>
         </section>
         <section id="prod-text">
             <h3>Product name</h3>
@@ -71,42 +73,110 @@
     </main>
     <aside>
         <h2>Similar products</h2>
-        <article class="product-card">
-            <picture>
-                <img src="https://picsum.photos/350" alt="article 1">
-            </picture>
-            <section>
-                <a href="product.html"><h3>Product name</h3></a>
-                <p>Kr 1999</p>
-            </section>
-        </article>
-        <article class="product-card">
-            <picture>
-                <img src="https://picsum.photos/350" alt="article 2">
-            </picture>
-            <section>
-                <a href="product.html"><h3>Product name</h3></a>
-                <p>Kr 1999</p>
-            </section>
-        </article>
-        <article class="product-card">
-            <picture>
-                <img src="https://picsum.photos/350" alt="article 3">
-            </picture>
-            <section>
-                <a href="product.html"><h3>Product name</h3></a>
-                <p>Kr 1999</p>
-            </section>
-        </article>
-        <article class="product-card">
-            <picture>
-                <img src="https://picsum.photos/350" alt="article 4">
-            </picture>
-            <section>
-                <a href="product.html"><h3>Product name</h3></a>
-                <p>Kr 1999</p>
-            </section>
-        </article>
+        <section id="scrollable-prod">
+            <article class="product-card">
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 1">
+                </picture>
+                <section>
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Kr 1999</p>
+                </section>
+                <ul class="stars">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><p>843 Reviews</p></li>
+                </ul>
+            </article>
+            <article class="product-card">
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 2">
+                </picture>
+                <section>
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Kr 1999</p>
+                </section>
+                <ul class="stars">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><p>843 Reviews</p></li>
+                </ul>
+            </article>
+            <article class="product-card">
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 3">
+                </picture>
+                <section>
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Kr 1999</p>
+                </section>
+                <ul class="stars">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><p>843 Reviews</p></li>
+                </ul>
+            </article>
+            <article class="product-card">
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 4">
+                </picture>
+                <section>
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Kr 1999</p>
+                </section>
+                <ul class="stars">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><p>843 Reviews</p></li>
+                </ul>
+            </article>
+            <article class="product-card">
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 4">
+                </picture>
+                <section>
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Kr 1999</p>
+                </section>
+                <ul class="stars">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><p>843 Reviews</p></li>
+                </ul>
+            </article>
+            <article class="product-card">
+                <picture>
+                    <img src="https://picsum.photos/350" alt="article 4">
+                </picture>
+                <section>
+                    <a href="product.html"><h3>Product name</h3></a>
+                    <p>Kr 1999</p>
+                </section>
+                <ul class="stars">
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-solid fa-star"></i></li>
+                    <li><i class="fa-regular fa-star"></i></li>
+                    <li><p>843 Reviews</p></li>
+                </ul>
+            </article>
+        </section>
     </aside>
     <footer id="global-footer">
         <section id="footer-logo">
