@@ -192,7 +192,7 @@ main section, aside{
 .stars{
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
 }
 
 #breadcrumbs{
@@ -281,6 +281,7 @@ main section, aside{
     section{
         display: flex;
         flex-direction: row;
+        align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0;
